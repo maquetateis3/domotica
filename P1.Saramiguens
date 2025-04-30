@@ -1,0 +1,18 @@
+#include <Servo.h> 
+Servo miServo; 
+int pinServo = 2; 
+int pinBoton = 3; // Pin donde está conectado el botón 
+int estadoBotonAnterior = LOW; 
+int angulo = 0;
+
+void setup() { 
+miServo.attach(pinServo);
+pinMode(pinBoton, INPUT);
+miServo.write(0); // Posición inicial 
+} 
+void loop() { 
+int estadoBoton = digitalRead(pinBoton);
+if (estadoBoton == HIGH && estadoBotonAnterior == LOW) {
+if (angulo == 0) {
+angulo = 90;
+} else { angulo = 0; } miServo.write(angulo); delay(200); // Antirrebote } estadoBotonAnterior = estadoBoton; }
