@@ -12,7 +12,4 @@ While True:
     porta=1
   else:
     porta=0
-  led.write_digital(1)
-  led.write_digital(0)
-if b pulsado
-    sleep(100)
+  sleep(100)
