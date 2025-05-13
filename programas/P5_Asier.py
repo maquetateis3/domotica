@@ -3,9 +3,8 @@ import music
 
 
 pir = pin15.rea_digital()
-np = neopixel.NeoPixel(pin13, )
-led_blannco = pin14
-sensor_pir = pin15
+np = neopixel.NeoPixel(pin13)
+led = pin14
 
 while True:
     if pir ==1:
@@ -16,6 +15,7 @@ while True:
             display.show(Image.ANGRY)
             led.write_digital(0)
             np[0] = (0, 0, 0)
+            np[1] = (0, 0, 0)
             np.show()
             led.write_digital(1)
             np[0] = (0, 255, 0)
