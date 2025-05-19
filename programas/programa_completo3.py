@@ -1,6 +1,6 @@
 """Programa completo da fila 1 para a maqueta domótica. 
 Autores: Marta, Sara Miguéns y Asierillo
-Data: 
+Data: 19/5/2025
 """P1 maqueta. Sensor de temperatura
 Autor: Bernardo Álvarez
 5/4/25"""
