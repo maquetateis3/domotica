@@ -1,3 +1,6 @@
+"""Programa completo da fila 1 para a maqueta domótica. 
+Autores: Marta, Sara Miguéns y Asierillo
+Data: 19/5/2025
 """P1 maqueta. Sensor de temperatura
 Autor: Bernardo Álvarez
 5/4/25"""
@@ -24,6 +27,7 @@ while True:
         rele.write_digital(0)  # Apagar o LED normal
 
     sleep(1000)  # Esperar 1 segundo
+"""Programa 3, marta"""
 from microbit import *
 
 while True:
@@ -32,6 +36,7 @@ while True:
         sleep(5000)
         music.play(music.RINGTONE)
         sleep
+
 """Programa 4 para la maqueta de domótica"""
 Autor:Sara Miguéns
 Data: 7 de mayo de 2025
@@ -47,6 +52,8 @@ While True:
   else:
     porta=0
   sleep(100)
+
+"""Programa 5, asierillo"""
 from microbit import*
 import music
 
